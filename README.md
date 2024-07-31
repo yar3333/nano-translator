@@ -9,6 +9,6 @@ Just press Ctrl+C+C and text in clipboard will be translated.
 
 ## Developer notes
 
-This application is written in C# (.NET 6.0).
+This application is written in C# (.NET 6.0). The Google Translate is used for translation.
 
-Это приложение написано на C# (.NET 6.0).
+Это приложение написано на C# (.NET 6.0). Для перевода используется Google Translate.
