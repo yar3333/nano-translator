@@ -27,6 +27,6 @@ public static class GoogleTranslator
         var jsonStr = await http.GetStringAsync(uri.Uri);
         var jsonDoc = JsonSerializer.Deserialize<JsonArray>(jsonStr);
 
-        return jsonDoc?[0]?[0]?[0]?.ToString() ?? "";
+        return string.Join(' ', jsonDoc?[0].AsArray().Select(x => x?.AsArray()[0]!.ToString())!) ?? "";
     }
 }
